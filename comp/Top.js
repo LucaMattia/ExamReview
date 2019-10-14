@@ -7,20 +7,29 @@ function Top(){
 const [bgState, SetBgState] = useState(false)
 
 var bgColor = null;
+var msg = null;
 if(bgState == false){
+    msg = (
+        <Text>Day Mode</Text>
+    )
     bgColor = styles.container1
-}
-if(bgState == true){
-    bgColor = styles.container2
-}
+   }
 
-    return(
+if(bgState == true){
+    msg =(
+        <Text style={{color:"white"}}>Night Mode</Text>
+    )
+    bgColor = styles.container2
+ 
+}
+   return(
         <View  style={bgColor}>
+            
             <Switch style={styles.switch}
             onValueChange={(value)=>{SetBgState(value)}}
             value = {bgState}
             />
-            <Text style={styles.text}>Day Mode</Text>
+            {msg}
          </View>
       )
 
