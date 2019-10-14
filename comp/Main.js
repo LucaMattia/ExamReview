@@ -1,10 +1,12 @@
 import React from 'react';
 import {View} from 'react-native';
 
+import Top from './Top'
 
 function Main(){
     return(
-        <View>
+        <View style={{flex:1}}>
+            <Top />
         </View>
     )
 }
