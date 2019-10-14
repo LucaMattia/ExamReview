@@ -5,17 +5,17 @@ const styles = StyleSheet.create({
         flex:1,
         justifyContent:"center",
         alignItems:"center",
-        backgroundColor:'yellow'
+        backgroundColor:"yellow"
     },
     container2:{
         flex:1,
         justifyContent:"center",
         alignItems:"center",
-        backgroundColor:'pink'
+        backgroundColor:"pink"
     },
     picker:{
         width:150
-    },  
+    }  
 
     
 })

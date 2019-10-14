@@ -6,7 +6,7 @@ import Mid from '../comp/Mid';
 
 function Main(){
     return(
-        <View>
+        <View style={{flex:1}}>
 
             <Mid />
         </View>

@@ -5,7 +5,7 @@ import styles from '../styles/MidStyles';
 
 function Mid(){
     
-    const [bgState, SetBgState] = useState(1)
+    const [bgState, SetBgState] = useState(1);
 
     var bgColor = null;
     if(bgState == 1){
